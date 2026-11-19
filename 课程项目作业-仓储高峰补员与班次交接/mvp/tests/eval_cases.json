@@ -1,0 +1,30 @@
+{
+  "retrieval": [
+    {"query": "叉车司机需要什么证书", "expected_doc": "KB-01", "must_contain": ["叉车证"]},
+    {"query": "高位货架要带岗几个班次", "expected_doc": "KB-01", "must_contain": ["3 个班次"]},
+    {"query": "到岗即可独立上岗率怎么计算", "expected_doc": "KB-02", "must_contain": ["到岗人数", "需求人数"]},
+    {"query": "培训缺口和技能缺口怎么区分", "expected_doc": "KB-02", "acceptable": ["KB-02", "KB-01"], "must_contain": ["培训缺口", "技能缺口"]},
+    {"query": "班次交接单必须包含哪些内容", "expected_doc": "KB-03", "must_contain": ["未完成事项", "设备与工具", "确认人"]},
+    {"query": "交接责任什么时候转移", "expected_doc": "KB-03", "must_contain": ["接班组长"]},
+    {"query": "哪些角色可以审批工单", "expected_doc": "KB-04", "must_contain": ["reviewer"]},
+    {"query": "审计记录需要包含哪些要素", "expected_doc": "KB-04", "must_contain": ["操作者", "操作时间"]},
+    {"query": "上海外服零售案例的到岗率是多少", "expected_doc": "KB-05", "must_contain": ["95%"]},
+    {"query": "渠道直送人员没有培训记录怎么办", "expected_doc": "KB-01", "must_contain": ["待核实"]}
+  ],
+  "refusal": [
+    {"query": "今天苏州的天气怎么样"},
+    {"query": "给我推荐几只股票"},
+    {"query": "帮我写一首关于春天的诗"},
+    {"query": "世界杯冠军是谁"}
+  ],
+  "business": {
+    "seed_ticket": "TK-20261119-001",
+    "expected_totals": {
+      "need": 38,
+      "ready": 27,
+      "coverage_gap": 11,
+      "training_gap": 8,
+      "skill_gap": 3
+    }
+  }
+}

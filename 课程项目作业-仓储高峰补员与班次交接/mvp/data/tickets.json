@@ -1,0 +1,78 @@
+{
+  "tickets": [
+    {
+      "id": "TK-20261119-001",
+      "tenant": "fsg-east",
+      "site": "华东-苏州仓",
+      "peak": "双11高峰",
+      "shift": "夜班",
+      "status": "draft",
+      "created_by": "lin.yizhou",
+      "created_at": "2026-11-19T09:30:00+08:00",
+      "updated_at": "2026-11-19T09:30:00+08:00",
+      "demand": [
+        {
+          "line_id": "L1",
+          "role": "拣货员",
+          "need": 20,
+          "available_ready": 16,
+          "available_training": 3,
+          "available_no_skill": 1,
+          "required_cert": "无",
+          "required_training": "WMS波次拣货 2 小时"
+        },
+        {
+          "line_id": "L2",
+          "role": "上架员",
+          "need": 12,
+          "available_ready": 6,
+          "available_training": 4,
+          "available_no_skill": 2,
+          "required_cert": "无",
+          "required_training": "高位货架带岗 3 个班次"
+        },
+        {
+          "line_id": "L3",
+          "role": "复核员",
+          "need": 4,
+          "available_ready": 3,
+          "available_training": 1,
+          "available_no_skill": 0,
+          "required_cert": "无",
+          "required_training": "单据核对带岗 3 天"
+        },
+        {
+          "line_id": "L4",
+          "role": "叉车司机",
+          "need": 2,
+          "available_ready": 2,
+          "available_training": 0,
+          "available_no_skill": 0,
+          "required_cert": "叉车证（有效期内）",
+          "required_training": "客户安全培训 1 小时"
+        }
+      ],
+      "handover": {
+        "shift_date": "2026-11-19",
+        "outgoing_lead": "",
+        "incoming_lead": "",
+        "items": {
+          "unfinished": "",
+          "equipment": "",
+          "risks": "",
+          "confirm": ""
+        }
+      },
+      "review": {
+        "decision": null,
+        "by": null,
+        "comment": null,
+        "at": null
+      },
+      "handover_confirmed": {
+        "by": null,
+        "at": null
+      }
+    }
+  ]
+}

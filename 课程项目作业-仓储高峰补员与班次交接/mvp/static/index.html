@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>仓储高峰补员与班次交接 · 业务核对助手</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="toast" class="toast" hidden></div>
+
+  <section id="login-view" class="login-view">
+    <div class="login-card">
+      <div class="brand-block">
+        <span class="brandmark">FSG/</span>
+        <div>
+          <strong>仓储高峰补员与班次交接</strong>
+          <small>业务核对助手 · 课程 MVP</small>
+        </div>
+      </div>
+      <p class="login-note">用不同角色登录，观察权限、审批与审计的差异。所有数据为合成演练数据。</p>
+      <form id="login-form" autocomplete="off">
+        <label>账号<input name="username" value="lin.yizhou" required></label>
+        <label>密码<input name="password" type="password" value="demo123" required></label>
+        <button class="primary" type="submit">登录</button>
+      </form>
+      <div class="account-grid" id="account-grid"></div>
+      <p class="hint">管理员（SaaS）<code>admin / admin123</code>；其余演示账号密码均为 <code>demo123</code>。</p>
+    </div>
+  </section>
+
+  <div id="app-view" class="app-shell" hidden>
+    <aside class="sidebar">
+      <div class="brand-block compact">
+        <span class="brandmark">FSG/</span>
+        <div><strong>补员与交接</strong><small>业务核对助手</small></div>
+      </div>
+      <nav id="nav"></nav>
+      <div class="sidebar-foot">
+        <div id="user-card"></div>
+        <button class="quiet" data-action="logout">退出登录</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">FDE 课程项目 · 合成演练</span>
+          <h1 id="page-title">工单看板</h1>
+        </div>
+        <div class="topbar-right">
+          <span class="pill" id="tenant-pill"></span>
+          <span class="pill accent" id="role-pill"></span>
+        </div>
+      </header>
+      <div id="content" class="content"></div>
+    </main>
+  </div>
+
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

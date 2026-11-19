@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "name": "平台管理员",
+      "role": "saas_admin",
+      "tenant": "*",
+      "email": "admin@example.com",
+      "password_sha256": "035f95e0a69b7fe66f359e62fa1eac8ab27697c85106d317af58aad84db75ae4",
+      "active": true
+    },
+    {
+      "username": "gu.minglan",
+      "name": "顾明岚",
+      "role": "tenant_admin",
+      "tenant": "fsg-east",
+      "email": "gu.minglan@example.com",
+      "password_sha256": "a34cad98d881078998baed3003b77e561f102c534d59ca9774742b9c1416f328",
+      "active": true
+    },
+    {
+      "username": "lin.yizhou",
+      "name": "林亦舟",
+      "role": "dispatcher",
+      "tenant": "fsg-east",
+      "email": "lin.yizhou@example.com",
+      "password_sha256": "a34cad98d881078998baed3003b77e561f102c534d59ca9774742b9c1416f328",
+      "active": true
+    },
+    {
+      "username": "tang.yingqiu",
+      "name": "唐映秋",
+      "role": "dispatcher",
+      "tenant": "fsg-east",
+      "email": "tang.yingqiu@example.com",
+      "password_sha256": "a34cad98d881078998baed3003b77e561f102c534d59ca9774742b9c1416f328",
+      "active": true
+    },
+    {
+      "username": "fu.jing",
+      "name": "傅景",
+      "role": "reviewer",
+      "tenant": "fsg-east",
+      "email": "fu.jing@example.com",
+      "password_sha256": "a34cad98d881078998baed3003b77e561f102c534d59ca9774742b9c1416f328",
+      "active": true
+    },
+    {
+      "username": "qin.rui",
+      "name": "秦芮",
+      "role": "operator",
+      "tenant": "fsg-east",
+      "email": "qin.rui@example.com",
+      "password_sha256": "a34cad98d881078998baed3003b77e561f102c534d59ca9774742b9c1416f328",
+      "active": true
+    },
+    {
+      "username": "ye.shu",
+      "name": "叶书",
+      "role": "viewer",
+      "tenant": "fsg-east",
+      "email": "ye.shu@example.com",
+      "password_sha256": "a34cad98d881078998baed3003b77e561f102c534d59ca9774742b9c1416f328",
+      "active": true
+    }
+  ]
+}
